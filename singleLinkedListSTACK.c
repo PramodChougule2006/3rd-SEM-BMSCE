@@ -60,7 +60,7 @@ int main()
     printf("\nStack operations using single linked list :\n");
     while(1)
     {
-        printf("\n 1.Insert\n 2.Delete\n 3.Display\n 4.Exit\n");
+        printf("\n 1.Push\n 2.Pop\n 3.Display\n 4.Exit\n");
         printf("Enter your choice :");
         scanf("%d", &choice);
         switch(choice)
@@ -79,4 +79,5 @@ int main()
         }
     }
     return 0;
+
 }
