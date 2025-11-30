@@ -18,7 +18,6 @@ struct Node* createNode(int data){
 }
 struct Node* insert(struct Node* root, int data){
     if(root==NULL){
-        // printf("Created root %d in the tree...", data);
         return createNode(data);
     }
     if(data<root->data){
@@ -66,8 +65,6 @@ int main(){
     printf("Enter the elements :");
     for(int i=0; i<n; i++){
         scanf("%d",&data[i]);
-    }
-    for(int i=0; i<n; i++){
         root=insert(root,data[i]);
     }
     printf("---BINARY TREE OPERATIONS---\n");
@@ -90,4 +87,5 @@ int main(){
         }
     }
     return 0;
+
 }
